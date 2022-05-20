@@ -13,14 +13,14 @@
     
     <title>CRUD - PHP and HTML</title>
 </head>
-<body style="background-color: #00838f;">
+<body style="background-image: url('https://fronty.com/static/uploads/1.12-1.01/css%20image/HTML_IMAGE.png');">
 
 
-    <main class="container p-4 mt-5 rounded col-6" style="background-color: white;">
+    <main class="container p-4 mt-5 rounded col-6" style="background-color: rgba(255, 255, 255, .3);">
     
     <fieldset>
     <!--TITULO DE LA PAGINA-->
-    <h1 class="titulo mb-4 d-flex justify-content-center">PHP - Conexión con Mysql</h1>
+    <h1 class="titulo mb-4 d-flex justify-content-center text-white">PHP - Conexión con Mysql</h1>
 
     <form action="connect.php" method="post" >
         <label class="font-weight-bold">id 🔢: </label>
@@ -53,16 +53,13 @@
             let apellido = document.getElementById('ape');
             let btn_eli = document.getElementById('btn-eli');
             let btn_edi = document.getElementById('edi');
-
             let btn_registrar = document.getElementById('btn-registrar');
             let boton = document.getElementById('eli');
-
             boton.classList.remove('eliminar');
             nombre.classList.add('eliminar');
             apellido.classList.add('eliminar');
             labeln.classList.add('eliminar');
             labela.classList.add('eliminar');
-
             btn_edi.classList.add('eliminar');
             btn_registrar.classList.add('eliminar');
             btn_eli.classList.add('eliminar');
