@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>CRUD - PHP and HTML</title>
+</head>
+<body style="background-color: black;">
+
+
+    <main style="background-color: white;">
+    
+    <fieldset>
+    <!--TITULO DE LA PAGINA-->
+    <h1>PHP - Conexión con Mysql</h1>
+    <form action="connect.php" method="post">
+        id: <input type="number" name="identificador" />
+    
+        <label for="nom" id="labeln">Nombre: </label>
+        <input type="text" id="nom" name="nombre" placeholder="Ingrese el nombre">
+    
+        <label for="ape" id="labela">Apellido: </label>
+        <input type="text" id="ape" name="apellido" placeholder="Ingrese el apellido"> <br/><br/>
+    
+        <button type="submit" name="registrar" id="btn-registrar">Registrar Datos</button>
+        
+        <button type="submit" name="eliminar" class="eliminar" id="eli">Eliminar</button>
+    </form> <br/>
+
+    <button href="#" onclick="eliminar()" id="btn-eli">Eliminar registro</button>
+    </fieldset>
+
+    </main>
+
+    
+
+    <script>
+
+        function eliminar() {
+
+            let nombre = document.getElementById('nom');
+            let labeln = document.getElementById('labeln');
+
+            let labela = document.getElementById('labela');
+            let apellido = document.getElementById('ape');
+            let btn_eli = document.getElementById('btn-eli');
+
+            let btn_registrar = document.getElementById('btn-registrar');
+            let boton = document.getElementById('eli');
+
+            boton.classList.remove('eliminar');
+            nombre.classList.add('eliminar');
+            apellido.classList.add('eliminar');
+            labeln.classList.add('eliminar');
+            labela.classList.add('eliminar');
+
+            btn_registrar.classList.add('eliminar');
+            btn_eli.classList.add('eliminar');
+
+
+        }
+
+    </script>
+
+    
+</body>
+</html>
