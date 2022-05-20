@@ -1,32 +1,53 @@
+
+
 .eliminar {
     display: none;
 }
 
 
-body {
+main {
+    border-left: 18px solid rgb(0, 0, 0);
+    border-right: 18px solid rgb(0, 0, 0);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0, 0.2);
+    background: rgb(255,255,255);
+    background: linear-gradient(290deg, rgba(255,255,255,0)25%, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 100%);
+    backdrop-filter: blur(4px);
     animation-name: aparecer;
     animation-duration: 3s;
-    animation-timing-function: linear;
+    animation-timing-function: ease-out;
     opacity: 1;
+    
 }
+
 
 @keyframes aparecer {
     0% {
         opacity: 0;
+        
     }
 
     50% {
         opacity: .5;
+        
     }
 
     100% {
         opacity: 1;
+        
+            
     }
 }
 
-main {
-    border-left: 14px solid rgb(255, 255, 255);
-    border-right: 14px solid rgb(255, 255, 255);
-    box-shadow: 0 8px 32px 0 rgba(0,0,0, 0.3);
-    backdrop-filter: blur(2px);
+
+
+input {
+    border: none;
+}
+
+input::placeholder {
+    opacity: .4;
+}
+
+input:focus {
+    outline: none;
 }

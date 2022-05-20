@@ -16,29 +16,32 @@
 <body style="background-image: url('https://fronty.com/static/uploads/1.12-1.01/css%20image/HTML_IMAGE.png');">
 
 
-    <main class="container p-4 mt-5 rounded col-6" style="background-color: rgba(255, 255, 255, .3);">
+    <main class="container p-4 mt-5 rounded col-6" style="background-color: rgba(255, 255, 255, 0.199);">
     
     <fieldset>
+        
+    
     <!--TITULO DE LA PAGINA-->
     <h1 class="titulo mb-4 d-flex justify-content-center text-white">PHP - Conexión con Mysql</h1>
 
     <form action="connect.php" method="post" >
-        <label class="font-weight-bold">id 🔢: </label>
-        <input type="number" name="identificador" class="col-12 mb-3 p-1" placeholder="Ingrese el identificador"  />
-        <label for="nom" id="labeln" class="font-weight-bold" >Nombre  🧍 : </label>
-        <input type="text" id="nom" name="nombre" placeholder="Ingrese el nombre"  class="col-12 mb-3 p-1" autocomplete="off">
-        <label for="ape" id="labela" class="font-weight-bold">Apellido  🧍 : </label>
-        <input type="text" id="ape" name="apellido" placeholder="Ingrese el apellido"  class="col-12 mb-4 p-1" autocomplete="off">
+        <label class="font-weight-bold text-white">id 🔢: </label>
+        <input type="number" name="identificador" class="col-12 mb-3 p-2" placeholder="Ingrese el identificador"  />
+        <label for="nom" id="labeln" class="font-weight-bold text-white" >Nombre  🧍 : </label>
+        <input type="text" id="nom" name="nombre" placeholder="Ingrese el nombre"  class="col-12 mb-3 p-2" autocomplete="off">
+        <label for="ape" id="labela" class="font-weight-bold text-white">Apellido  🧍 : </label>
+        <input type="text" id="ape" name="apellido" placeholder="Ingrese el apellido"  class="col-12 mb-4 p-2" autocomplete="off">
         <button type="submit" name="registrar" id="btn-registrar" class="btn btn-success">Registrar Datos 📒 </button>
         <button type="submit" name="eliminar" class="eliminar btn btn-danger" id="eli" >Eliminar 🗑️ </button>
         <button type="submit" name="editar" id="edi" class="btn btn-primary">Editar Registro ✏️</button>
+        <button type="submit" name="editar" id="edi" class="btn btn-warning">Consultar Registro 🔎</button>
 
     </form> <br/>
 
     <button href="#" onclick="eliminar()" id="btn-eli" class="btn btn-danger">Eliminar registro 🗑️ </button>
 
+    
     </fieldset>
-
     </main>
 
     
