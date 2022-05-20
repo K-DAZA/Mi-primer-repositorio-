@@ -1,3 +1,25 @@
 .eliminar {
     display: none;
 }
+
+
+body {
+    animation-name: aparecer;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    opacity: 1;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
