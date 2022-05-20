@@ -28,6 +28,8 @@
         <button type="submit" name="registrar" id="btn-registrar">Registrar Datos</button>
         
         <button type="submit" name="eliminar" class="eliminar" id="eli">Eliminar</button>
+
+        <button type="submit" name="editar" id="edi">Editar Registro</button>
     </form> <br/>
 
     <button href="#" onclick="eliminar()" id="btn-eli">Eliminar registro</button>
@@ -43,10 +45,10 @@
 
             let nombre = document.getElementById('nom');
             let labeln = document.getElementById('labeln');
-
             let labela = document.getElementById('labela');
             let apellido = document.getElementById('ape');
             let btn_eli = document.getElementById('btn-eli');
+            let btn_edi = document.getElementById('edi');
 
             let btn_registrar = document.getElementById('btn-registrar');
             let boton = document.getElementById('eli');
@@ -56,7 +58,8 @@
             apellido.classList.add('eliminar');
             labeln.classList.add('eliminar');
             labela.classList.add('eliminar');
-
+            
+            btn_edi.classList.add('eliminar');
             btn_registrar.classList.add('eliminar');
             btn_eli.classList.add('eliminar');
 

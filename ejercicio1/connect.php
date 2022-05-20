@@ -30,6 +30,12 @@
       echo "Se ha eliminado exitosamente el registro";
     }
 
+    if(isset($_POST['editar'])){
+      $sql = "UPDATE `empleados` SET `nombre`='$name',`apellido`='$lastname' WHERE `id` = '$id'";
+      $connect->exec($sql);
+      echo "Se ha editado exitosamente el registro";
+    }
+
     
 
   }catch(PDOException $error){
