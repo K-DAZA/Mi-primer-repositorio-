@@ -6,11 +6,11 @@
 
 
 main {
-    border-left: 18px solid rgb(0, 0, 0);
-    border-right: 18px solid rgb(0, 0, 0);
+    /*border-left: 18px solid rgb(0, 0, 0);*/
+    /*border-right: 18px solid rgb(0, 0, 0);*/
     box-shadow: 0 8px 32px 0 rgba(0,0,0, 0.2);
     background: rgb(255,255,255);
-    background: linear-gradient(290deg, rgba(255,255,255,0)25%, rgba(0,0,0,1) 10%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(290deg, rgba(255,255,255,0)20%, rgba(0,0,0,1) 40%, rgba(0,0,0,1) 70%);
     backdrop-filter: blur(4px);
     animation-name: aparecer;
     animation-duration: 3s;
